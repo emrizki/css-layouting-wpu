@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 960px;
   background-color: #fff;
   margin: auto;
   box-sizing: border-box;
@@ -91,36 +91,61 @@ body {
 }
 
 .hero {
-  height: 280px;
+  height: 320px;
   background-image: url(img/hero.jpeg);
   background-size: cover;
-  background-position: 0 -690px;
+  background-position: 0 -800px;
   border-top: 5px solid lightsalmon;
   border-bottom: 5px solid lightskyblue;
 }
 
-.content {
+.main {
+  width: 600px;
   padding: 20px;
+  box-sizing: border-box;
+  float: left;
 }
 
-.content h2 {
+.main h2 {
   font-size: 20px;
   font-weight: bold;
 }
 
-.content .penulis {
+.main .penulis {
   font-size: 11px;
   margin-top: -5px;
 }
 
-.content .penulis a {
+.main .penulis a {
   color: salmon;
   text-decoration: none;
 }
 
-.content p {
+.main p {
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar img {
+  float: left;
+  padding-right: 15px;
+}
+
+.sidebar p {
+  font: 16px/18px arial;
 }
 
 .footer {
@@ -131,4 +156,20 @@ body {
 .footer .copy {
   text-align: center;
   color: white;
+}
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
